@@ -1,16 +1,10 @@
 def LongestWord(sen)
-
-  max = 0
-  lword = ''
-  sen.delete! "!@$%^&*():;<>?,./"
+  max_word = ''
   sen.split.each do |word|
-    if word.length > max
-      max = word.length
-      lword = word
-    end
+    word.gsub!(/\W/, '')
+    max_word = word if word.size > max_word.size
   end
-  return lword
-         
+  return max_word
 end
-   
-LongestWord(STDIN.gets)
+  
+LongestWord(STDIN.gets)           
