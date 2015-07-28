@@ -1,10 +1,9 @@
 def FirstFactorial(num)
 
   sum = 1
-  num.downto(1) {|n| sum*=n}
-  return sum
+  num<=0 ? sum = 0 : num.downto(1) {|n| sum*=n}
+  return sum 
          
 end
-  
-FirstFactorial(STDIN.gets)           
-
+ 
+FirstFactorial(STDIN.gets)  
