@@ -1,5 +1,5 @@
 # coderbyte
-### Solving 20 problems to practice coding by ruby and ruby on rails
+### Solving problems to practice coding by ruby and ruby on rails
 #### Ruby로 웹 서비스 제작 전 ruby에 익숙해지기 위한 문제풀기용
 ##### 1. AlphabetSoup(str)
 - str을 알파벳 오름차순 정렬 후 리턴
